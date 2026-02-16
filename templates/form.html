@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Form</title>
+</head>
+<body>
+
+    <h2>Enter Details</h2>
+
+    <form method="POST">
+        Name: <input type="text" name="name"><br><br>
+        Age: <input type="number" name="age"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if name %}
+        <h3>Submitted Data:</h3>
+        <p>Name: {{ name }}</p>
+        <p>Age: {{ age }}</p>
+    {% endif %}
+
+</body>
+</html>

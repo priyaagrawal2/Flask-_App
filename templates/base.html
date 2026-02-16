@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    <style>
+        body { font-family: Arial; margin:0; }
+        nav { background:#333; color:white; padding:15px; }
+        footer { background:#333; color:white; padding:10px; text-align:center; position:fixed; bottom:0; width:100%; }
+        .container { padding:20px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>My Flask Website</h2>
+</nav>
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+<footer>
+    © 2026 Flask App
+</footer>
+
+</body>
+</html>
